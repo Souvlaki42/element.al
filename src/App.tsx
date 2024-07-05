@@ -1,11 +1,13 @@
 import { Setter, Show, createEffect, createSignal } from "solid-js";
 import elements from "./elements.json";
 
+type ElementType = (typeof elements)[number];
+
 const Element = ({
 	data,
 	setDisplayInfo,
 }: {
-	data: (typeof elements)[number];
+	data?: ElementType;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const handleExitClick = () => setDisplayInfo(false);
@@ -22,29 +24,29 @@ const Element = ({
 			<div class="symbolContainer">
 				<div
 					class="symbol"
-					style={{ "background-color": `#${data.cpkHexColor}` }}
+					style={{ "background-color": `#${data?.cpkHexColor}` }}
 				>
-					<h1 class="symbolAtomicMass">{data.atomicMass}</h1>
-					<h1 class="symbolText">{data.symbol}</h1>
-					<h1 class="symbolAtomicNumber">{data.atomicNumber}</h1>
+					<h1 class="symbolAtomicMass">{data?.atomicMass}</h1>
+					<h1 class="symbolText">{data?.symbol}</h1>
+					<h1 class="symbolAtomicNumber">{data?.atomicNumber}</h1>
 				</div>
 			</div>
 			<div class="remInfo">
 				<div class="remInfoLeft">
-					<p class="remText">Atomic number : {data.atomicNumber}</p>
-					<p class="remText">Symbol : {data.symbol}</p>
-					<p class="remText">Name : {data.name}</p>
-					<p class="remText">Atomic mass : {data.atomicMass}</p>
+					<p class="remText">Atomic number : {data?.atomicNumber}</p>
+					<p class="remText">Symbol : {data?.symbol}</p>
+					<p class="remText">Name : {data?.name}</p>
+					<p class="remText">Atomic mass : {data?.atomicMass}</p>
 					<p class="remText">
-						Electronic configuration : {data.electronicConfiguration}
+						Electronic configuration : {data?.electronicConfiguration}
 					</p>
 				</div>
 				<div class="remInfoRight">
-					<p class="remText">Oxidation states : {data.oxidationStates}</p>
-					<p class="remText">Standard physical state : {data.standardState}</p>
-					<p class="remText">Density : {data.density} g/cm^3</p>
-					<p class="remText">Type : {data.groupBlock}</p>
-					<p class="remText">Year discovered : {data.yearDiscovered}</p>
+					<p class="remText">Oxidation states : {data?.oxidationStates}</p>
+					<p class="remText">Standard physical state : {data?.standardState}</p>
+					<p class="remText">Density : {data?.density} g/cm^3</p>
+					<p class="remText">Type : {data?.groupBlock}</p>
+					<p class="remText">Year discovered : {data?.yearDiscovered}</p>
 				</div>
 			</div>
 		</div>
@@ -55,7 +57,7 @@ const Home = ({
 	setElement,
 	setDisplayInfo,
 }: {
-	setElement: Setter<(typeof elements)[number] | undefined>;
+	setElement: Setter<ElementType | undefined>;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const [elementInput, setElementInput] = createSignal<string>("");
@@ -100,23 +102,6 @@ const Home = ({
 	);
 };
 
-const NotFound = ({ setDisplayInfo }: { setDisplayInfo: Setter<boolean> }) => {
-	const handleExitClick = () => setDisplayInfo(false);
-	return (
-		<div class="newMain">
-			<div class="exitContainer">
-				<img
-					src="exit.svg"
-					class="exitIcon"
-					alt="Exit"
-					onClick={handleExitClick}
-				/>
-			</div>
-			<p class="helperText">This element does not exist. Try again.";</p>
-		</div>
-	);
-};
-
 const KeySequence = ({
 	expectedSequence,
 	actionHandler,
@@ -150,9 +135,14 @@ const KeySequence = ({
 
 export default function App() {
 	const [displayInfo, setDisplayInfo] = createSignal<boolean>(false);
-	const [element, setElement] = createSignal<
-		(typeof elements)[number] | undefined
-	>(undefined);
+	const [element, setElement] = createSignal<ElementType | undefined>(
+		undefined
+	);
+	createEffect(() => {
+		if (displayInfo() && !!!element())
+			alert("This element does not exist. Try again.");
+		setDisplayInfo(false);
+	});
 
 	return (
 		<>
@@ -180,11 +170,7 @@ export default function App() {
 					<Home setElement={setElement} setDisplayInfo={setDisplayInfo}></Home>
 				</Show>
 				<Show when={displayInfo() && !!element()}>
-					<Element data={element()!} setDisplayInfo={setDisplayInfo}></Element>
-				</Show>
-				<Show when={displayInfo() && !!!element()}>
-					<NotFound setDisplayInfo={setDisplayInfo}></NotFound>
-					<dialog></dialog>
+					<Element data={element()} setDisplayInfo={setDisplayInfo}></Element>
 				</Show>
 			</main>
 			<footer>

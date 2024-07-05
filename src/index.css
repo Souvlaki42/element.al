@@ -20,36 +20,32 @@ body {
 header {
 	font-size: 4rem;
 	font-family: "Poppins", sans-serif;
+	text-align: center;
 }
 
 .elementName {
 	width: 30vw;
 	height: 6vh;
+	border: none;
 	font-size: 1.5rem;
-	padding: 5px;
-	outline: none;
-	border: 2px solid black;
-	border-radius: 0px;
 }
 
 .search {
 	width: 80px;
-	height: 8vh;
-	padding: 5px;
-	font-size: 1.5rem;
+	height: 6vh;
 	border: none;
+	font-size: 1.5rem;
 	background-color: #4020cf;
-	border-radius: 0px;
 	color: white;
-}
-
-.search:hover {
-	background-color: #2f13ac;
+	&:hover {
+		background-color: #2f13ac;
+	}
 }
 
 .helperText {
 	margin: 0.8rem;
 	font-size: 1.2rem;
+	text-align: center;
 }
 
 footer {
