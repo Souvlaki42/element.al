@@ -1,24 +1,57 @@
-import { Setter, Show, createEffect, createSignal } from "solid-js";
+import {
+	Setter,
+	Show,
+	createEffect,
+	createSignal,
+	onCleanup,
+	onMount,
+} from "solid-js";
 import elements from "./elements.json";
 
-type ElementType = (typeof elements)[number];
+type Element = (typeof elements)[number];
+type KeySequenceHandler = {
+	expectedSequence: string[];
+	sequenceAction: <T>() => T | void;
+};
 
-const Element = ({
+const konamiCodeKeySequenceHandler = {
+	expectedSequence: [
+		"ArrowUp",
+		"ArrowUp",
+		"ArrowDown",
+		"ArrowDown",
+		"ArrowLeft",
+		"ArrowRight",
+		"ArrowLeft",
+		"ArrowRight",
+		"b",
+		"a",
+	],
+	sequenceAction: () => {
+		window.location.href = "https://en.wikipedia.org/wiki/Dmitri_Mendeleev";
+	},
+} satisfies KeySequenceHandler;
+
+const ElementDisplay = ({
 	data,
 	setDisplayInfo,
 }: {
-	data?: ElementType;
+	data?: Element;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const handleExitClick = () => setDisplayInfo(false);
+	const [exitOnHover, setExitOnHover] = createSignal<boolean>(false);
 	return (
 		<div class="newMain">
+			<KeySequence sequenceHandler={konamiCodeKeySequenceHandler}></KeySequence>
 			<div class="exitContainer">
 				<img
-					src="exit.svg"
+					src={exitOnHover() ? "exit2.svg" : "exit.svg"}
 					class="exitIcon"
 					alt="Exit"
 					onClick={handleExitClick}
+					onMouseEnter={() => setExitOnHover(true)}
+					onMouseLeave={() => setExitOnHover(false)}
 				/>
 			</div>
 			<div class="symbolContainer">
@@ -57,13 +90,19 @@ const Home = ({
 	setElement,
 	setDisplayInfo,
 }: {
-	setElement: Setter<ElementType | undefined>;
+	setElement: Setter<Element | undefined>;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const [elementInput, setElementInput] = createSignal<string>("");
 
 	return (
 		<>
+			<header>Element.al</header>
+			<main>
+				<KeySequence
+					sequenceHandler={konamiCodeKeySequenceHandler}
+				></KeySequence>
+			</main>
 			<form
 				class="inputArea"
 				onsubmit={(e) => {
@@ -88,7 +127,7 @@ const Home = ({
 					class="elementName"
 					type="text"
 					name="element"
-					placeholder="Type any element name..."
+					placeholder="Type any element value..."
 					value={elementInput()}
 					onInput={(e) => setElementInput(e.target.value)}
 					required
@@ -98,81 +137,6 @@ const Home = ({
 				</button>
 			</form>
 			<p class="helperText">You can also search by atomic number or symbol.</p>
-		</>
-	);
-};
-
-const KeySequence = ({
-	expectedSequence,
-	actionHandler,
-}: {
-	expectedSequence: string[];
-	actionHandler: () => void;
-}) => {
-	const [_, setKeySequence] = createSignal<string[]>([]);
-	const handleKeyDown = (event: KeyboardEvent) => {
-		const { key } = event;
-		setKeySequence((prevKeys) => {
-			const newKeys = [...prevKeys, key].slice(-expectedSequence.length);
-			if (newKeys.join(",") === expectedSequence.join(",")) {
-				// Expected sequence matched
-				actionHandler();
-			}
-			return newKeys;
-		});
-	};
-
-	createEffect(() => {
-		window.addEventListener("keydown", handleKeyDown);
-
-		return () => {
-			window.removeEventListener("keydown", handleKeyDown);
-		};
-	}, []);
-
-	return null;
-};
-
-export default function App() {
-	const [displayInfo, setDisplayInfo] = createSignal<boolean>(false);
-	const [element, setElement] = createSignal<ElementType | undefined>(
-		undefined
-	);
-	createEffect(() => {
-		if (displayInfo() && !!!element())
-			alert("This element does not exist. Try again.");
-		setDisplayInfo(false);
-	});
-
-	return (
-		<>
-			<header>Element.al</header>
-			<main>
-				<KeySequence
-					expectedSequence={[
-						"ArrowUp",
-						"ArrowUp",
-						"ArrowDown",
-						"ArrowDown",
-						"ArrowLeft",
-						"ArrowRight",
-						"ArrowLeft",
-						"ArrowRight",
-						"b",
-						"a",
-					]}
-					actionHandler={() => {
-						window.location.href =
-							"https://en.wikipedia.org/wiki/Dmitri_Mendeleev";
-					}}
-				></KeySequence>
-				<Show when={!displayInfo()}>
-					<Home setElement={setElement} setDisplayInfo={setDisplayInfo}></Home>
-				</Show>
-				<Show when={displayInfo() && !!element()}>
-					<Element data={element()} setDisplayInfo={setDisplayInfo}></Element>
-				</Show>
-			</main>
 			<footer>
 				<p class="helperText">Created by</p>
 				<div class="creators">
@@ -184,6 +148,56 @@ export default function App() {
 					</a>
 				</div>
 			</footer>
+		</>
+	);
+};
+
+const KeySequence = ({
+	sequenceHandler,
+}: {
+	sequenceHandler: KeySequenceHandler;
+}) => {
+	let keySequence = new Array<string>();
+	const { expectedSequence, sequenceAction } = sequenceHandler;
+	const handleKeyDown = (e: KeyboardEvent) => {
+		keySequence = [...keySequence, e.key].slice(-expectedSequence.length);
+		if (keySequence.join(",") === expectedSequence.join(",")) {
+			sequenceAction();
+		}
+	};
+
+	onMount(() => {
+		window.addEventListener("keydown", handleKeyDown);
+
+		onCleanup(() => {
+			window.removeEventListener("keydown", handleKeyDown);
+		});
+	});
+
+	return null;
+};
+
+export default function App() {
+	const [displayInfo, setDisplayInfo] = createSignal<boolean>(false);
+	const [element, setElement] = createSignal<Element | undefined>(undefined);
+	createEffect(() => {
+		if (displayInfo() && !!!element()) {
+			alert("This element does not exist. Try again.");
+			setDisplayInfo(false);
+		}
+	});
+
+	return (
+		<>
+			<Show when={!displayInfo()}>
+				<Home setElement={setElement} setDisplayInfo={setDisplayInfo}></Home>
+			</Show>
+			<Show when={displayInfo() && !!element()}>
+				<ElementDisplay
+					data={element()}
+					setDisplayInfo={setDisplayInfo}
+				></ElementDisplay>
+			</Show>
 		</>
 	);
 }
