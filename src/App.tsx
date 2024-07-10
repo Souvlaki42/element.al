@@ -8,7 +8,12 @@ import {
 } from "solid-js";
 import elements from "./elements.json";
 
-type Element = (typeof elements)[number];
+// Preprocess elements into multiple indexes
+const elementsByAtomicNumber: ChemicalElement[] = [];
+const elementsBySymbol: Record<string, ChemicalElement> = {};
+const elementsByName: Record<string, ChemicalElement> = {};
+
+type ChemicalElement = (typeof elements)[number];
 type KeySequenceHandler = {
 	expectedSequence: string[];
 	sequenceAction: <T>() => T | void;
@@ -36,13 +41,13 @@ const ElementDisplay = ({
 	data,
 	setDisplayInfo,
 }: {
-	data?: Element;
+	data?: ChemicalElement;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const handleExitClick = () => setDisplayInfo(false);
 	const [exitOnHover, setExitOnHover] = createSignal<boolean>(false);
 	return (
-		<div class="newMain">
+		<main class="w-[100vw] h-[100vh] justify-center">
 			<KeySequence sequenceHandler={konamiCodeKeySequenceHandler}></KeySequence>
 			<div class="exitContainer">
 				<img
@@ -82,7 +87,7 @@ const ElementDisplay = ({
 					<p class="remText">Year discovered : {data?.yearDiscovered}</p>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 };
 
@@ -90,7 +95,7 @@ const Home = ({
 	setElement,
 	setDisplayInfo,
 }: {
-	setElement: Setter<Element | undefined>;
+	setElement: Setter<ChemicalElement | undefined>;
 	setDisplayInfo: Setter<boolean>;
 }) => {
 	const [elementInput, setElementInput] = createSignal<string>("");
@@ -109,16 +114,17 @@ const Home = ({
 					e.preventDefault();
 					if (!!!elementInput()) return;
 
-					const numberInfo = Number(elementInput());
-					if (!isNaN(numberInfo)) {
-						// display by atomic number
-						setElement(elements[numberInfo - 1]);
+					const numberQuery = Number(elementInput());
+
+					if (!isNaN(numberQuery) && numberQuery >= 1 && numberQuery <= 118) {
+						// Find element by atomic number
+						setElement(elementsByAtomicNumber[numberQuery - 1]);
 					} else if (elementInput().length <= 2) {
-						// display by symbol
-						setElement(elements.find((el) => el.symbol === elementInput()));
+						// Find element by symbol
+						setElement(elementsBySymbol[elementInput()]);
 					} else {
-						// display by atomic name
-						setElement(elements.find((el) => el.name === elementInput()));
+						// Find element by name
+						setElement(elementsByName[elementInput()]);
 					}
 					setDisplayInfo(true);
 				}}
@@ -179,12 +185,22 @@ const KeySequence = ({
 
 export default function App() {
 	const [displayInfo, setDisplayInfo] = createSignal<boolean>(false);
-	const [element, setElement] = createSignal<Element | undefined>(undefined);
+	const [element, setElement] = createSignal<ChemicalElement | undefined>(
+		undefined
+	);
 	createEffect(() => {
 		if (displayInfo() && !!!element()) {
 			alert("This element does not exist. Try again.");
 			setDisplayInfo(false);
 		}
+	});
+
+	onMount(() => {
+		elements.forEach((element) => {
+			elementsByAtomicNumber[element.atomicNumber - 1] = element;
+			elementsBySymbol[element.symbol] = element;
+			elementsByName[element.name] = element;
+		});
 	});
 
 	return (

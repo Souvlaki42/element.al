@@ -1,20 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
 
-* {
-	margin: 0;
-	padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-	font-family: "Inter", sans-serif;
-	background-color: #efefef;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	@apply font-inter bg-[#efefef] w-screen h-screen flex justify-center items-center flex-col;
 }
 
 header {
@@ -64,12 +56,6 @@ footer {
 		overflow: hidden;
 		margin: 0.3rem;
 	}
-}
-
-.newMain {
-	width: 100vw;
-	height: 100vh;
-	justify-content: center;
 }
 
 .exitContainer {
