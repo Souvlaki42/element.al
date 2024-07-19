@@ -6,4 +6,11 @@ import App from "./App";
 
 const root = document.querySelector("#root");
 
-render(() => <App />, root!);
+if (!root) {
+  alert("Root element is missing. Refresh the page or contact the developer!");
+  throw new Error(
+    "Root element is missing. Refresh the page or contact the developer!",
+  );
+}
+
+render(() => <App />, root);
