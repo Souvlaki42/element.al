@@ -1,0 +1,32 @@
+---
+import { ClientRouter } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Interactive Periodic Table - Explore chemical elements"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body
+    class="min-h-screen bg-gray-50 transition-colors duration-300 dark:bg-gray-900"
+  >
+    <main class="container mx-auto px-4 py-8" transition:animate="slide">
+      <slot />
+    </main>
+  </body>
+</html>

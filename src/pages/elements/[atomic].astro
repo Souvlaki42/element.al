@@ -1,0 +1,90 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "~/components/Layout.astro";
+
+export async function getStaticPaths() {
+  const elements = await getCollection("elements");
+
+  return elements.map((element) => ({
+    params: { atomic: element.id },
+    props: { rawElement: element }
+  }));
+}
+
+let {
+  rawElement: { data: element }
+} = Astro.props;
+
+const properties = [
+  { label: "Atomic number", value: element.id },
+  { label: "Name", value: element.name },
+  { label: "Atomic mass", value: element.atomicMass },
+  {
+    label: "Electronic configuration",
+    value: element.electronicConfiguration
+  },
+  { label: "Electronegativity", value: element.electronegativity },
+  { label: "Atomic radius", value: `${element.atomicRadius} pm` },
+  { label: "Ion radius", value: `${element.ionRadius} pm` },
+  { label: "Van der Waals radius", value: `${element.vanDerWaalsRadius} pm` },
+  { label: "Ionization energy", value: `${element.ionizationEnergy} kJ/mol` },
+  { label: "Electron affinity", value: `${element.electronAffinity} kJ/mol` },
+  { label: "Oxidation states", value: element.oxidationStates },
+  { label: "Standard physical state", value: element.standardState },
+  { label: "Bonding type", value: element.bondingType },
+  { label: "Melting point", value: `${element.meltingPoint} °C` },
+  { label: "Boiling point", value: `${element.boilingPoint} °C` },
+  { label: "Density", value: `${element.density} g/cm³` },
+  { label: "Type", value: element.groupBlock },
+  { label: "Year discovered", value: element.yearDiscovered }
+];
+---
+
+<Layout title={element.name}>
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <div class="mb-8 text-center">
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-blue-600 transition-colors hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        <span>Back to Periodic Table</span>
+      </a>
+    </div>
+    <section class="mb-12 flex justify-center">
+      <div
+        class="flex h-48 w-48 flex-col items-center justify-center rounded-xl p-4 transition-transform hover:scale-105"
+        style={`background-color: #${element.cpkHexColor || "FFFFFF"}; color: ${parseInt((element.cpkHexColor || "FFFFFF").toString(), 16) > 0xffffff / 2 ? "#000000" : "#FFFFFF"}`}
+      >
+        <span class="text-lg font-medium">{element.atomicMass}</span>
+        <span class="my-2 text-6xl font-bold">{element.symbol}</span>
+        <span class="text-lg font-medium">{element.id}</span>
+      </div>
+    </section>
+    <section class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {
+        properties.map(({ label, value }) => (
+          <div class="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105 dark:bg-gray-800">
+            <dt class="mb-1 text-sm font-medium text-gray-500 dark:text-gray-400">
+              {label}
+            </dt>
+            <dd class="text-xl font-semibold text-gray-900 dark:text-white">
+              {!!value || value === 0 ? value : "-"}
+            </dd>
+          </div>
+        ))
+      }
+    </section>
+  </article>
+</Layout>
