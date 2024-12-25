@@ -22,7 +22,7 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
         You can search by name, atomic number or symbol.
       </p>
     </div>
-    <Search elements={elements} />
+    <Search elements={elements} client:load />
     <div class="mb-12 text-center">
       <h2 class="my-4 text-2xl font-bold text-gray-900 dark:text-white">
         About Us
@@ -41,7 +41,6 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
             alt="Delta6626"
             class="mx-auto h-12 w-12 rounded-full transition-transform hover:scale-110"
           />
-          <p class="text-lg text-gray-600 dark:text-gray-300">Delta6626</p>
         </a>
         <a href="https://souvlaki.me" target="_blank" rel="noopener noreferrer">
           <img
@@ -49,7 +48,6 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
             alt="Souvlaki42"
             class="mx-auto h-12 w-12 rounded-full transition-transform hover:scale-110"
           />
-          <p class="text-lg text-gray-600 dark:text-gray-300">Souvlaki42</p>
         </a>
       </div>
     </div>

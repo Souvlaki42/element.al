@@ -6,8 +6,8 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "static",
-  site: "https://element.souviki.me",
+  output: "server",
+  site: "https://elemental.souviki.me",
   integrations: [tailwind(), qwikdev()],
   adapter: vercel()
 });
