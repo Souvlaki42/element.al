@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "atomicNumber": 1,
     "symbol": "H",
     "name": "Hydrogen",
     "atomicMass": "1.008",
@@ -22,7 +22,7 @@
     "yearDiscovered": 1766
   },
   {
-    "id": 2,
+    "atomicNumber": 2,
     "symbol": "He",
     "name": "Helium",
     "atomicMass": "4.003(2)",
@@ -44,7 +44,7 @@
     "yearDiscovered": 1868
   },
   {
-    "id": 3,
+    "atomicNumber": 3,
     "symbol": "Li",
     "name": "Lithium",
     "atomicMass": "6.941(2)",
@@ -66,7 +66,7 @@
     "yearDiscovered": 1817
   },
   {
-    "id": 4,
+    "atomicNumber": 4,
     "symbol": "Be",
     "name": "Beryllium",
     "atomicMass": "9.012182(3)",
@@ -88,7 +88,7 @@
     "yearDiscovered": 1798
   },
   {
-    "id": 5,
+    "atomicNumber": 5,
     "symbol": "B",
     "name": "Boron",
     "atomicMass": "10.811(7)",
@@ -110,7 +110,7 @@
     "yearDiscovered": 1807
   },
   {
-    "id": 6,
+    "atomicNumber": 6,
     "symbol": "C",
     "name": "Carbon",
     "atomicMass": "12.0107(8)",
@@ -132,7 +132,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 7,
+    "atomicNumber": 7,
     "symbol": "N",
     "name": "Nitrogen",
     "atomicMass": "14.0067(2)",
@@ -154,7 +154,7 @@
     "yearDiscovered": 1772
   },
   {
-    "id": 8,
+    "atomicNumber": 8,
     "symbol": "O",
     "name": "Oxygen",
     "atomicMass": "15.9994(3)",
@@ -176,7 +176,7 @@
     "yearDiscovered": 1774
   },
   {
-    "id": 9,
+    "atomicNumber": 9,
     "symbol": "F",
     "name": "Fluorine",
     "atomicMass": "18.9984032(5)",
@@ -198,7 +198,7 @@
     "yearDiscovered": 1670
   },
   {
-    "id": 10,
+    "atomicNumber": 10,
     "symbol": "Ne",
     "name": "Neon",
     "atomicMass": "20.1797(6)",
@@ -220,7 +220,7 @@
     "yearDiscovered": 1898
   },
   {
-    "id": 11,
+    "atomicNumber": 11,
     "symbol": "Na",
     "name": "Sodium",
     "atomicMass": "22.98976928(2)",
@@ -242,7 +242,7 @@
     "yearDiscovered": 1807
   },
   {
-    "id": 12,
+    "atomicNumber": 12,
     "symbol": "Mg",
     "name": "Magnesium",
     "atomicMass": "24.3050(6)",
@@ -264,7 +264,7 @@
     "yearDiscovered": 1808
   },
   {
-    "id": 13,
+    "atomicNumber": 13,
     "symbol": "Al",
     "name": "Aluminum",
     "atomicMass": "26.9815386(8)",
@@ -286,7 +286,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 14,
+    "atomicNumber": 14,
     "symbol": "Si",
     "name": "Silicon",
     "atomicMass": "28.0855(3)",
@@ -308,7 +308,7 @@
     "yearDiscovered": 1854
   },
   {
-    "id": 15,
+    "atomicNumber": 15,
     "symbol": "P",
     "name": "Phosphorus",
     "atomicMass": "30.973762(2)",
@@ -330,7 +330,7 @@
     "yearDiscovered": 1669
   },
   {
-    "id": 16,
+    "atomicNumber": 16,
     "symbol": "S",
     "name": "Sulfur",
     "atomicMass": "32.065(5)",
@@ -352,7 +352,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 17,
+    "atomicNumber": 17,
     "symbol": "Cl",
     "name": "Chlorine",
     "atomicMass": "35.453(2)",
@@ -374,7 +374,7 @@
     "yearDiscovered": 1774
   },
   {
-    "id": 18,
+    "atomicNumber": 18,
     "symbol": "Ar",
     "name": "Argon",
     "atomicMass": "39.948(1)",
@@ -396,7 +396,7 @@
     "yearDiscovered": 1894
   },
   {
-    "id": 19,
+    "atomicNumber": 19,
     "symbol": "K",
     "name": "Potassium",
     "atomicMass": "39.0983(1)",
@@ -418,7 +418,7 @@
     "yearDiscovered": 1807
   },
   {
-    "id": 20,
+    "atomicNumber": 20,
     "symbol": "Ca",
     "name": "Calcium",
     "atomicMass": "40.078(4)",
@@ -440,7 +440,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 21,
+    "atomicNumber": 21,
     "symbol": "Sc",
     "name": "Scandium",
     "atomicMass": "44.955912(6)",
@@ -462,7 +462,7 @@
     "yearDiscovered": 1876
   },
   {
-    "id": 22,
+    "atomicNumber": 22,
     "symbol": "Ti",
     "name": "Titanium",
     "atomicMass": "47.867(1)",
@@ -484,7 +484,7 @@
     "yearDiscovered": 1791
   },
   {
-    "id": 23,
+    "atomicNumber": 23,
     "symbol": "V",
     "name": "Vanadium",
     "atomicMass": "50.9415(1)",
@@ -506,7 +506,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 24,
+    "atomicNumber": 24,
     "symbol": "Cr",
     "name": "Chromium",
     "atomicMass": "51.9961(6)",
@@ -528,7 +528,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 25,
+    "atomicNumber": 25,
     "symbol": "Mn",
     "name": "Manganese",
     "atomicMass": "54.938045(5)",
@@ -550,7 +550,7 @@
     "yearDiscovered": 1774
   },
   {
-    "id": 26,
+    "atomicNumber": 26,
     "symbol": "Fe",
     "name": "Iron",
     "atomicMass": "55.845(2)",
@@ -572,7 +572,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 27,
+    "atomicNumber": 27,
     "symbol": "Co",
     "name": "Cobalt",
     "atomicMass": "58.933195(5)",
@@ -594,7 +594,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 28,
+    "atomicNumber": 28,
     "symbol": "Ni",
     "name": "Nickel",
     "atomicMass": "58.6934(4)",
@@ -616,7 +616,7 @@
     "yearDiscovered": 1751
   },
   {
-    "id": 29,
+    "atomicNumber": 29,
     "symbol": "Cu",
     "name": "Copper",
     "atomicMass": "63.546(3)",
@@ -638,7 +638,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 30,
+    "atomicNumber": 30,
     "symbol": "Zn",
     "name": "Zinc",
     "atomicMass": "65.38(2)",
@@ -660,7 +660,7 @@
     "yearDiscovered": 1746
   },
   {
-    "id": 31,
+    "atomicNumber": 31,
     "symbol": "Ga",
     "name": "Gallium",
     "atomicMass": "69.723(1)",
@@ -682,7 +682,7 @@
     "yearDiscovered": 1875
   },
   {
-    "id": 32,
+    "atomicNumber": 32,
     "symbol": "Ge",
     "name": "Germanium",
     "atomicMass": "72.64(1)",
@@ -704,7 +704,7 @@
     "yearDiscovered": 1886
   },
   {
-    "id": 33,
+    "atomicNumber": 33,
     "symbol": "As",
     "name": "Arsenic",
     "atomicMass": "74.92160(2)",
@@ -726,7 +726,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 34,
+    "atomicNumber": 34,
     "symbol": "Se",
     "name": "Selenium",
     "atomicMass": "78.96(3)",
@@ -748,7 +748,7 @@
     "yearDiscovered": 1817
   },
   {
-    "id": 35,
+    "atomicNumber": 35,
     "symbol": "Br",
     "name": "Bromine",
     "atomicMass": "79.904(1)",
@@ -770,7 +770,7 @@
     "yearDiscovered": 1826
   },
   {
-    "id": 36,
+    "atomicNumber": 36,
     "symbol": "Kr",
     "name": "Krypton",
     "atomicMass": "83.798(2)",
@@ -792,7 +792,7 @@
     "yearDiscovered": 1898
   },
   {
-    "id": 37,
+    "atomicNumber": 37,
     "symbol": "Rb",
     "name": "Rubidium",
     "atomicMass": "85.4678(3)",
@@ -814,7 +814,7 @@
     "yearDiscovered": 1861
   },
   {
-    "id": 38,
+    "atomicNumber": 38,
     "symbol": "Sr",
     "name": "Strontium",
     "atomicMass": "87.62(1)",
@@ -836,7 +836,7 @@
     "yearDiscovered": 1790
   },
   {
-    "id": 39,
+    "atomicNumber": 39,
     "symbol": "Y",
     "name": "Yttrium",
     "atomicMass": "88.90585(2)",
@@ -858,7 +858,7 @@
     "yearDiscovered": 1794
   },
   {
-    "id": 40,
+    "atomicNumber": 40,
     "symbol": "Zr",
     "name": "Zirconium",
     "atomicMass": "91.224(2)",
@@ -880,7 +880,7 @@
     "yearDiscovered": 1789
   },
   {
-    "id": 41,
+    "atomicNumber": 41,
     "symbol": "Nb",
     "name": "Niobium",
     "atomicMass": "92.90638(2)",
@@ -902,7 +902,7 @@
     "yearDiscovered": 1801
   },
   {
-    "id": 42,
+    "atomicNumber": 42,
     "symbol": "Mo",
     "name": "Molybdenum",
     "atomicMass": "95.96(2)",
@@ -924,7 +924,7 @@
     "yearDiscovered": 1778
   },
   {
-    "id": 43,
+    "atomicNumber": 43,
     "symbol": "Tc",
     "name": "Technetium",
     "atomicMass": [98],
@@ -946,7 +946,7 @@
     "yearDiscovered": 1937
   },
   {
-    "id": 44,
+    "atomicNumber": 44,
     "symbol": "Ru",
     "name": "Ruthenium",
     "atomicMass": "101.07(2)",
@@ -968,7 +968,7 @@
     "yearDiscovered": 1827
   },
   {
-    "id": 45,
+    "atomicNumber": 45,
     "symbol": "Rh",
     "name": "Rhodium",
     "atomicMass": "102.90550(2)",
@@ -990,7 +990,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 46,
+    "atomicNumber": 46,
     "symbol": "Pd",
     "name": "Palladium",
     "atomicMass": "106.42(1)",
@@ -1012,7 +1012,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 47,
+    "atomicNumber": 47,
     "symbol": "Ag",
     "name": "Silver",
     "atomicMass": "107.8682(2)",
@@ -1034,7 +1034,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 48,
+    "atomicNumber": 48,
     "symbol": "Cd",
     "name": "Cadmium",
     "atomicMass": "112.411(8)",
@@ -1056,7 +1056,7 @@
     "yearDiscovered": 1817
   },
   {
-    "id": 49,
+    "atomicNumber": 49,
     "symbol": "In",
     "name": "Indium",
     "atomicMass": "114.818(3)",
@@ -1078,7 +1078,7 @@
     "yearDiscovered": 1863
   },
   {
-    "id": 50,
+    "atomicNumber": 50,
     "symbol": "Sn",
     "name": "Tin",
     "atomicMass": "118.710(7)",
@@ -1100,7 +1100,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 51,
+    "atomicNumber": 51,
     "symbol": "Sb",
     "name": "Antimony",
     "atomicMass": "121.760(1)",
@@ -1122,7 +1122,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 52,
+    "atomicNumber": 52,
     "symbol": "Te",
     "name": "Tellurium",
     "atomicMass": "127.60(3)",
@@ -1144,7 +1144,7 @@
     "yearDiscovered": 1782
   },
   {
-    "id": 53,
+    "atomicNumber": 53,
     "symbol": "I",
     "name": "Iodine",
     "atomicMass": "126.90447(3)",
@@ -1166,7 +1166,7 @@
     "yearDiscovered": 1811
   },
   {
-    "id": 54,
+    "atomicNumber": 54,
     "symbol": "Xe",
     "name": "Xenon",
     "atomicMass": "131.293(6)",
@@ -1188,7 +1188,7 @@
     "yearDiscovered": 1898
   },
   {
-    "id": 55,
+    "atomicNumber": 55,
     "symbol": "Cs",
     "name": "Cesium",
     "atomicMass": "132.9054519(2)",
@@ -1210,7 +1210,7 @@
     "yearDiscovered": 1860
   },
   {
-    "id": 56,
+    "atomicNumber": 56,
     "symbol": "Ba",
     "name": "Barium",
     "atomicMass": "137.327(7)",
@@ -1232,7 +1232,7 @@
     "yearDiscovered": 1808
   },
   {
-    "id": 57,
+    "atomicNumber": 57,
     "symbol": "La",
     "name": "Lanthanum",
     "atomicMass": "138.90547(7)",
@@ -1254,7 +1254,7 @@
     "yearDiscovered": 1839
   },
   {
-    "id": 58,
+    "atomicNumber": 58,
     "symbol": "Ce",
     "name": "Cerium",
     "atomicMass": "140.116(1)",
@@ -1276,7 +1276,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 59,
+    "atomicNumber": 59,
     "symbol": "Pr",
     "name": "Praseodymium",
     "atomicMass": "140.90765(2)",
@@ -1298,7 +1298,7 @@
     "yearDiscovered": 1885
   },
   {
-    "id": 60,
+    "atomicNumber": 60,
     "symbol": "Nd",
     "name": "Neodymium",
     "atomicMass": "144.242(3)",
@@ -1320,7 +1320,7 @@
     "yearDiscovered": 1885
   },
   {
-    "id": 61,
+    "atomicNumber": 61,
     "symbol": "Pm",
     "name": "Promethium",
     "atomicMass": [145],
@@ -1342,7 +1342,7 @@
     "yearDiscovered": 1947
   },
   {
-    "id": 62,
+    "atomicNumber": 62,
     "symbol": "Sm",
     "name": "Samarium",
     "atomicMass": "150.36(2)",
@@ -1364,7 +1364,7 @@
     "yearDiscovered": 1853
   },
   {
-    "id": 63,
+    "atomicNumber": 63,
     "symbol": "Eu",
     "name": "Europium",
     "atomicMass": "151.964(1)",
@@ -1386,7 +1386,7 @@
     "yearDiscovered": 1901
   },
   {
-    "id": 64,
+    "atomicNumber": 64,
     "symbol": "Gd",
     "name": "Gadolinium",
     "atomicMass": "157.25(3)",
@@ -1408,7 +1408,7 @@
     "yearDiscovered": 1880
   },
   {
-    "id": 65,
+    "atomicNumber": 65,
     "symbol": "Tb",
     "name": "Terbium",
     "atomicMass": "158.92535(2)",
@@ -1430,7 +1430,7 @@
     "yearDiscovered": 1843
   },
   {
-    "id": 66,
+    "atomicNumber": 66,
     "symbol": "Dy",
     "name": "Dysprosium",
     "atomicMass": "162.500(1)",
@@ -1452,7 +1452,7 @@
     "yearDiscovered": 1886
   },
   {
-    "id": 67,
+    "atomicNumber": 67,
     "symbol": "Ho",
     "name": "Holmium",
     "atomicMass": "164.93032(2)",
@@ -1474,7 +1474,7 @@
     "yearDiscovered": 1878
   },
   {
-    "id": 68,
+    "atomicNumber": 68,
     "symbol": "Er",
     "name": "Erbium",
     "atomicMass": "167.259(3)",
@@ -1496,7 +1496,7 @@
     "yearDiscovered": 1842
   },
   {
-    "id": 69,
+    "atomicNumber": 69,
     "symbol": "Tm",
     "name": "Thulium",
     "atomicMass": "168.93421(2)",
@@ -1518,7 +1518,7 @@
     "yearDiscovered": 1879
   },
   {
-    "id": 70,
+    "atomicNumber": 70,
     "symbol": "Yb",
     "name": "Ytterbium",
     "atomicMass": "173.054(5)",
@@ -1540,7 +1540,7 @@
     "yearDiscovered": 1878
   },
   {
-    "id": 71,
+    "atomicNumber": 71,
     "symbol": "Lu",
     "name": "Lutetium",
     "atomicMass": "174.9668(1)",
@@ -1562,7 +1562,7 @@
     "yearDiscovered": 1907
   },
   {
-    "id": 72,
+    "atomicNumber": 72,
     "symbol": "Hf",
     "name": "Hafnium",
     "atomicMass": "178.49(2)",
@@ -1584,7 +1584,7 @@
     "yearDiscovered": 1923
   },
   {
-    "id": 73,
+    "atomicNumber": 73,
     "symbol": "Ta",
     "name": "Tantalum",
     "atomicMass": "180.94788(2)",
@@ -1606,7 +1606,7 @@
     "yearDiscovered": 1802
   },
   {
-    "id": 74,
+    "atomicNumber": 74,
     "symbol": "W",
     "name": "Tungsten",
     "atomicMass": "183.84(1)",
@@ -1628,7 +1628,7 @@
     "yearDiscovered": 1783
   },
   {
-    "id": 75,
+    "atomicNumber": 75,
     "symbol": "Re",
     "name": "Rhenium",
     "atomicMass": "186.207(1)",
@@ -1650,7 +1650,7 @@
     "yearDiscovered": 1925
   },
   {
-    "id": 76,
+    "atomicNumber": 76,
     "symbol": "Os",
     "name": "Osmium",
     "atomicMass": "190.23(3)",
@@ -1672,7 +1672,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 77,
+    "atomicNumber": 77,
     "symbol": "Ir",
     "name": "Iridium",
     "atomicMass": "192.217(3)",
@@ -1694,7 +1694,7 @@
     "yearDiscovered": 1803
   },
   {
-    "id": 78,
+    "atomicNumber": 78,
     "symbol": "Pt",
     "name": "Platinum",
     "atomicMass": "195.084(9)",
@@ -1716,7 +1716,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 79,
+    "atomicNumber": 79,
     "symbol": "Au",
     "name": "Gold",
     "atomicMass": "196.966569(4)",
@@ -1738,7 +1738,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 80,
+    "atomicNumber": 80,
     "symbol": "Hg",
     "name": "Mercury",
     "atomicMass": "200.59(2)",
@@ -1760,7 +1760,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 81,
+    "atomicNumber": 81,
     "symbol": "Tl",
     "name": "Thallium",
     "atomicMass": "204.3833(2)",
@@ -1782,7 +1782,7 @@
     "yearDiscovered": 1861
   },
   {
-    "id": 82,
+    "atomicNumber": 82,
     "symbol": "Pb",
     "name": "Lead",
     "atomicMass": "207.2(1)",
@@ -1804,7 +1804,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 83,
+    "atomicNumber": 83,
     "symbol": "Bi",
     "name": "Bismuth",
     "atomicMass": "208.98040(1)",
@@ -1826,7 +1826,7 @@
     "yearDiscovered": "Ancient"
   },
   {
-    "id": 84,
+    "atomicNumber": 84,
     "symbol": "Po",
     "name": "Polonium",
     "atomicMass": [209],
@@ -1848,7 +1848,7 @@
     "yearDiscovered": 1898
   },
   {
-    "id": 85,
+    "atomicNumber": 85,
     "symbol": "At",
     "name": "Astatine",
     "atomicMass": [210],
@@ -1870,7 +1870,7 @@
     "yearDiscovered": 1940
   },
   {
-    "id": 86,
+    "atomicNumber": 86,
     "symbol": "Rn",
     "name": "Radon",
     "atomicMass": [222],
@@ -1892,7 +1892,7 @@
     "yearDiscovered": 1900
   },
   {
-    "id": 87,
+    "atomicNumber": 87,
     "symbol": "Fr",
     "name": "Francium",
     "atomicMass": [223],
@@ -1914,7 +1914,7 @@
     "yearDiscovered": 1939
   },
   {
-    "id": 88,
+    "atomicNumber": 88,
     "symbol": "Ra",
     "name": "Radium",
     "atomicMass": [226],
@@ -1936,7 +1936,7 @@
     "yearDiscovered": 1898
   },
   {
-    "id": 89,
+    "atomicNumber": 89,
     "symbol": "Ac",
     "name": "Actinium",
     "atomicMass": [227],
@@ -1958,7 +1958,7 @@
     "yearDiscovered": 1899
   },
   {
-    "id": 90,
+    "atomicNumber": 90,
     "symbol": "Th",
     "name": "Thorium",
     "atomicMass": "232.03806(2)",
@@ -1980,7 +1980,7 @@
     "yearDiscovered": 1828
   },
   {
-    "id": 91,
+    "atomicNumber": 91,
     "symbol": "Pa",
     "name": "Protactinium",
     "atomicMass": "231.03588(2)",
@@ -2002,7 +2002,7 @@
     "yearDiscovered": 1913
   },
   {
-    "id": 92,
+    "atomicNumber": 92,
     "symbol": "U",
     "name": "Uranium",
     "atomicMass": "238.02891(3)",
@@ -2024,7 +2024,7 @@
     "yearDiscovered": 1789
   },
   {
-    "id": 93,
+    "atomicNumber": 93,
     "symbol": "Np",
     "name": "Neptunium",
     "atomicMass": [237],
@@ -2046,7 +2046,7 @@
     "yearDiscovered": 1940
   },
   {
-    "id": 94,
+    "atomicNumber": 94,
     "symbol": "Pu",
     "name": "Plutonium",
     "atomicMass": [244],
@@ -2068,7 +2068,7 @@
     "yearDiscovered": 1940
   },
   {
-    "id": 95,
+    "atomicNumber": 95,
     "symbol": "Am",
     "name": "Americium",
     "atomicMass": [243],
@@ -2090,7 +2090,7 @@
     "yearDiscovered": 1944
   },
   {
-    "id": 96,
+    "atomicNumber": 96,
     "symbol": "Cm",
     "name": "Curium",
     "atomicMass": [247],
@@ -2112,7 +2112,7 @@
     "yearDiscovered": 1944
   },
   {
-    "id": 97,
+    "atomicNumber": 97,
     "symbol": "Bk",
     "name": "Berkelium",
     "atomicMass": [247],
@@ -2134,7 +2134,7 @@
     "yearDiscovered": 1949
   },
   {
-    "id": 98,
+    "atomicNumber": 98,
     "symbol": "Cf",
     "name": "Californium",
     "atomicMass": [251],
@@ -2156,7 +2156,7 @@
     "yearDiscovered": 1950
   },
   {
-    "id": 99,
+    "atomicNumber": 99,
     "symbol": "Es",
     "name": "Einsteinium",
     "atomicMass": [252],
@@ -2178,7 +2178,7 @@
     "yearDiscovered": 1952
   },
   {
-    "id": 100,
+    "atomicNumber": 100,
     "symbol": "Fm",
     "name": "Fermium",
     "atomicMass": [257],
@@ -2200,7 +2200,7 @@
     "yearDiscovered": 1952
   },
   {
-    "id": 101,
+    "atomicNumber": 101,
     "symbol": "Md",
     "name": "Mendelevium",
     "atomicMass": [258],
@@ -2222,7 +2222,7 @@
     "yearDiscovered": 1955
   },
   {
-    "id": 102,
+    "atomicNumber": 102,
     "symbol": "No",
     "name": "Nobelium",
     "atomicMass": [259],
@@ -2244,7 +2244,7 @@
     "yearDiscovered": 1957
   },
   {
-    "id": 103,
+    "atomicNumber": 103,
     "symbol": "Lr",
     "name": "Lawrencium",
     "atomicMass": [262],
@@ -2266,7 +2266,7 @@
     "yearDiscovered": 1961
   },
   {
-    "id": 104,
+    "atomicNumber": 104,
     "symbol": "Rf",
     "name": "Rutherfordium",
     "atomicMass": [267],
@@ -2288,7 +2288,7 @@
     "yearDiscovered": 1969
   },
   {
-    "id": 105,
+    "atomicNumber": 105,
     "symbol": "Db",
     "name": "Dubnium",
     "atomicMass": [268],
@@ -2310,7 +2310,7 @@
     "yearDiscovered": 1967
   },
   {
-    "id": 106,
+    "atomicNumber": 106,
     "symbol": "Sg",
     "name": "Seaborgium",
     "atomicMass": [271],
@@ -2332,7 +2332,7 @@
     "yearDiscovered": 1974
   },
   {
-    "id": 107,
+    "atomicNumber": 107,
     "symbol": "Bh",
     "name": "Bohrium",
     "atomicMass": [272],
@@ -2354,7 +2354,7 @@
     "yearDiscovered": 1976
   },
   {
-    "id": 108,
+    "atomicNumber": 108,
     "symbol": "Hs",
     "name": "Hassium",
     "atomicMass": [270],
@@ -2376,7 +2376,7 @@
     "yearDiscovered": 1984
   },
   {
-    "id": 109,
+    "atomicNumber": 109,
     "symbol": "Mt",
     "name": "Meitnerium",
     "atomicMass": [276],
@@ -2398,7 +2398,7 @@
     "yearDiscovered": 1982
   },
   {
-    "id": 110,
+    "atomicNumber": 110,
     "symbol": "Ds",
     "name": "Darmstadtium",
     "atomicMass": [281],
@@ -2420,7 +2420,7 @@
     "yearDiscovered": 1994
   },
   {
-    "id": 111,
+    "atomicNumber": 111,
     "symbol": "Rg",
     "name": "Roentgenium",
     "atomicMass": [280],
@@ -2442,7 +2442,7 @@
     "yearDiscovered": 1994
   },
   {
-    "id": 112,
+    "atomicNumber": 112,
     "symbol": "Cn",
     "name": "Copernicium",
     "atomicMass": [285],
@@ -2464,7 +2464,7 @@
     "yearDiscovered": 1996
   },
   {
-    "id": 113,
+    "atomicNumber": 113,
     "symbol": "Nh",
     "name": "Nihonium",
     "atomicMass": [284],
@@ -2486,7 +2486,7 @@
     "yearDiscovered": 2003
   },
   {
-    "id": 114,
+    "atomicNumber": 114,
     "symbol": "Fl",
     "name": "Flerovium",
     "atomicMass": [289],
@@ -2508,7 +2508,7 @@
     "yearDiscovered": 1998
   },
   {
-    "id": 115,
+    "atomicNumber": 115,
     "symbol": "Mc",
     "name": "Moscovium",
     "atomicMass": [288],
@@ -2530,7 +2530,7 @@
     "yearDiscovered": 2003
   },
   {
-    "id": 116,
+    "atomicNumber": 116,
     "symbol": "Lv",
     "name": "Livermorium",
     "atomicMass": [293],
@@ -2552,7 +2552,7 @@
     "yearDiscovered": 2000
   },
   {
-    "id": 117,
+    "atomicNumber": 117,
     "symbol": "Ts",
     "name": "Tennessine",
     "atomicMass": [294],
@@ -2574,7 +2574,7 @@
     "yearDiscovered": 2010
   },
   {
-    "id": 118,
+    "atomicNumber": 118,
     "symbol": "Og",
     "name": "Oganesson",
     "atomicMass": [294],

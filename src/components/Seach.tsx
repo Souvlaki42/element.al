@@ -12,7 +12,10 @@ export const Search = component$<SearchProps>(({ elements }) => {
     (element) =>
       element.name.toLowerCase().includes(query.value.toLowerCase()) ||
       element.symbol.toLowerCase().includes(query.value.toLowerCase()) ||
-      element.id.toString().toLowerCase().includes(query.value.toLowerCase())
+      element.atomicNumber
+        .toString()
+        .toLowerCase()
+        .includes(query.value.toLowerCase())
   );
 
   return (
@@ -32,12 +35,12 @@ export const Search = component$<SearchProps>(({ elements }) => {
       {query.value && (
         <ol class="absolute z-10 mt-2 max-h-96 w-full overflow-y-auto rounded-lg bg-white shadow-lg dark:bg-gray-700">
           {filteredElements.map((element) => (
-            <li key={element.id}>
+            <li key={element.atomicNumber}>
               <a
-                href={`/elements/${element.id}`}
+                href={`/elements/${element.atomicNumber}`}
                 class="block px-4 py-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-600"
               >
-                {element.symbol} - {element.name} [{element.id}]
+                {element.symbol} - {element.name} [{element.atomicNumber}]
               </a>
             </li>
           ))}

@@ -59,14 +59,14 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
         {
           randomElements.map((element) => (
             <a
-              href={`/elements/${element.id}`}
+              href={`/elements/${element.atomicNumber}`}
               class="rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105 dark:bg-gray-800"
             >
               <h3 class="mb-2 text-lg font-bold text-gray-900 dark:text-white">
                 {element.name}
               </h3>
               <p class="text-lg text-gray-600 dark:text-gray-300">
-                {element.symbol} - {element.id}
+                {element.symbol} - {element.atomicNumber}
               </p>
             </a>
           ))

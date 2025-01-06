@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const elements = await getCollection("elements");
 
   return elements.map((element) => ({
-    params: { atomic: element.id },
+    params: { atomic: element.data.atomicNumber },
     props: { rawElement: element }
   }));
 }
@@ -16,7 +16,7 @@ let {
 } = Astro.props;
 
 const properties = [
-  { label: "Atomic number", value: element.id },
+  { label: "Atomic number", value: element.atomicNumber },
   { label: "Name", value: element.name },
   { label: "Atomic mass", value: element.atomicMass },
   {
@@ -71,7 +71,7 @@ export const prerender = true;
       >
         <span class="text-lg font-medium">{element.atomicMass}</span>
         <span class="my-2 text-6xl font-bold">{element.symbol}</span>
-        <span class="text-lg font-medium">{element.id}</span>
+        <span class="text-lg font-medium">{element.atomicNumber}</span>
       </div>
     </section>
     <section class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
