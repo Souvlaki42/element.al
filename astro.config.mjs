@@ -8,6 +8,9 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   output: "server",
   site: "https://elemental.souviki.me",
-  integrations: [tailwind(), qwikdev()],
-  adapter: vercel()
+  integrations: [tailwind(), qwikdev({ include: "**/qwik/*" })],
+  adapter: vercel({
+    imageService: true,
+    devImageService: "sharp"
+  })
 });
