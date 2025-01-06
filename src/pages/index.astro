@@ -2,11 +2,14 @@
 import { getCollection } from "astro:content";
 import Layout from "~/components/Layout.astro";
 import { Search } from "~/components/Seach";
+import { getRandomElements } from "~/lib/utils";
 
 const rawElements = await getCollection("elements");
 const elements = rawElements.map((element) => element.data);
 
-const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
+const CACHE_DURATION = 24 * 60 * 60 * 1000; // 1 day
+
+const randomElements = getRandomElements(elements, CACHE_DURATION);
 ---
 
 <Layout title="Element.al">
@@ -22,7 +25,7 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
         You can search by name, atomic number or symbol.
       </p>
     </div>
-    <Search elements={elements} client:load />
+    <Search elements={elements} />
     <div class="mb-12 text-center">
       <h2 class="my-4 text-2xl font-bold text-gray-900 dark:text-white">
         About Us
@@ -53,7 +56,7 @@ const randomElements = elements.sort(() => Math.random() - 0.5).slice(0, 6);
     </div>
     <div class="mb-12 text-center">
       <h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
-        Featured Elements
+        Today's Elements
       </h2>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {
