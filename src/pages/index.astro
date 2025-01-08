@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "~/components/Layout.astro";
-import { Search } from "~/components/qwik/Seach";
 import { getRandomElements } from "~/lib/utils";
 
 const rawElements = await getCollection("elements");
@@ -25,7 +24,7 @@ const randomElements = getRandomElements(elements, CACHE_DURATION);
         You can search by name, atomic number or symbol.
       </p>
     </div>
-    <Search elements={elements} />
+    <!-- <Search elements={elements} /> -->
     <div class="mb-12 text-center">
       <h2 class="my-4 text-2xl font-bold text-gray-900 dark:text-white">
         About Us
