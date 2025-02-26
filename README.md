@@ -1,7 +1,7 @@
 # Element.al
 
 A simple interface for getting information about elements.
-Based on [delta911ee's repository](https://github.com/delta911ee/elemental)
+Based on [delta6626's repository](https://github.com/delta6626/elemental)
 
 ## Features
 
@@ -10,8 +10,9 @@ Based on [delta911ee's repository](https://github.com/delta911ee/elemental)
 
 ## Todo
 
-- Add a new favicon
-- Add a link to Dimitri Mendeleev's wikipedia page
+- [ ] Add a new favicon
+- [ ] Add a link to Dimitri Mendeleev's wikipedia page
+- [ ] Migrate to tailwind v4
 
 ## License
 
