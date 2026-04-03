@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(tailwindcss@4.2.2)
+        version: 6.0.2(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(tailwindcss@4.2.2)
       '@builder.io/qwik':
         specifier: ^1.19.2
-        version: 1.19.2(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
+        version: 1.19.2(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
       '@qwikdev/astro':
         specifier: ^0.8.3
-        version: 0.8.3(@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
+        version: 0.8.3(@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
       '@swup/astro':
         specifier: ^1.8.0
         version: 1.8.0
       astro:
         specifier: ^6.1.3
-        version: 6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
+        version: 6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
       tailwindcss:
         specifier: ^4.2.2
         version: 4.2.2
@@ -2298,10 +2298,6 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
 
-  jiti@1.21.7:
-    resolution: {integrity: sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==}
-    hasBin: true
-
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -3444,7 +3440,6 @@ packages:
 
   tailwindcss@4.2.2:
     resolution: {integrity: sha512-KWBIxs1Xb6NoLdMVqhbhgwZf2PGBpPEiwOqgI4pFIYbNTfBXiKYyWoTsXgBQ9WFg/OlhnvHaY+AEpW7wSmFo2Q==}
-    hasBin: true
 
   terser@5.46.1:
     resolution: {integrity: sha512-vzCjQO/rgUuK9sf8VJZvjqiqiHFaZLnOiimmUuOKODxWL8mm/xua7viT7aqX7dgPY60otQjUotzFMmCB4VdmqQ==}
@@ -3838,9 +3833,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(tailwindcss@4.2.2)':
+  '@astrojs/tailwind@6.0.2(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(tailwindcss@4.2.2)':
     dependencies:
-      astro: 6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
       autoprefixer: 10.4.27(postcss@8.5.8)
       postcss: 8.5.8
       postcss-load-config: 4.0.2(postcss@8.5.8)
@@ -4591,12 +4586,12 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))':
+  '@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))':
     dependencies:
       csstype: 3.2.3
       launch-editor: 2.13.2
       rollup: 4.60.1
-      vite: 7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)
 
   '@capsizecss/unpack@4.0.0':
     dependencies:
@@ -4794,24 +4789,24 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@inox-tools/aik-mod@0.11.0(astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))':
+  '@inox-tools/aik-mod@0.11.0(astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))':
     dependencies:
-      '@inox-tools/inline-mod': 2.4.1(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
-      astro: 6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
-      astro-integration-kit: 0.18.0(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))
+      '@inox-tools/inline-mod': 2.4.1(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
+      astro: 6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
+      astro-integration-kit: 0.18.0(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))
       debug: 4.4.3
     transitivePeerDependencies:
       - nanostores
       - supports-color
       - vite
 
-  '@inox-tools/inline-mod@2.4.1(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))':
+  '@inox-tools/inline-mod@2.4.1(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))':
     dependencies:
       '@inox-tools/utils': 1.1.1
       debug: 4.4.3
       typescript: 5.9.3
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)
     transitivePeerDependencies:
       - nanostores
       - supports-color
@@ -4844,11 +4839,11 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@qwikdev/astro@0.8.3(@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))':
+  '@qwikdev/astro@0.8.3(@builder.io/qwik@1.19.2(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))':
     dependencies:
-      '@builder.io/qwik': 1.19.2(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
-      '@inox-tools/aik-mod': 0.11.0(astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
-      astro-integration-kit: 0.18.0(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))
+      '@builder.io/qwik': 1.19.2(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
+      '@inox-tools/aik-mod': 0.11.0(astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)))(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
+      astro-integration-kit: 0.18.0(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3))
     transitivePeerDependencies:
       - astro
       - nanostores
@@ -5256,13 +5251,13 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)):
+  astro-integration-kit@0.18.0(astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)):
     dependencies:
-      astro: 6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
+      astro: 6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3)
       pathe: 1.1.2
       recast: 0.23.11
 
-  astro@6.1.3(@types/node@25.5.2)(jiti@1.21.7)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3):
+  astro@6.1.3(@types/node@25.5.2)(rollup@2.80.0)(terser@5.46.1)(typescript@6.0.2)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler': 3.0.1
       '@astrojs/internal-helpers': 0.8.0
@@ -5314,8 +5309,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.5
       vfile: 6.0.3
-      vite: 7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)
-      vitefu: 1.1.3(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3))
+      vite: 7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)
+      vitefu: 1.1.3(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
       zod: 4.3.6
@@ -6377,9 +6372,6 @@ snapshots:
       '@types/node': 25.5.2
       merge-stream: 2.0.0
       supports-color: 7.2.0
-
-  jiti@1.21.7:
-    optional: true
 
   js-tokens@4.0.0: {}
 
@@ -8013,7 +8005,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3):
+  vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
@@ -8024,13 +8016,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 25.5.2
       fsevents: 2.3.3
-      jiti: 1.21.7
       terser: 5.46.1
       yaml: 2.8.3
 
-  vitefu@1.1.3(vite@7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)):
+  vitefu@1.1.3(vite@7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)):
     optionalDependencies:
-      vite: 7.3.1(@types/node@25.5.2)(jiti@1.21.7)(terser@5.46.1)(yaml@2.8.3)
+      vite: 7.3.1(@types/node@25.5.2)(terser@5.46.1)(yaml@2.8.3)
 
   web-namespaces@2.0.1: {}
 
