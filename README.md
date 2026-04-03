@@ -13,6 +13,7 @@ Based on [delta6626's repository](https://github.com/delta6626/elemental)
 - [x] Add a new favicon
 - [ ] Add a link to Dimitri Mendeleev's wikipedia page
 - [x] Migrate to tailwind v4
+- [ ] Maybe add fuzzy searching
 
 ## License
 
