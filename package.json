@@ -2,7 +2,7 @@
   "name": "element.al",
   "description": "A simple interface for getting information about elements.",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
