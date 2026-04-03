@@ -10,9 +10,9 @@ Based on [delta6626's repository](https://github.com/delta6626/elemental)
 
 ## Todo
 
-- [ ] Add a new favicon
+- [x] Add a new favicon
 - [ ] Add a link to Dimitri Mendeleev's wikipedia page
-- [ ] Migrate to tailwind v4
+- [x] Migrate to tailwind v4
 
 ## License
 
