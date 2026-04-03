@@ -11,8 +11,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@builder.io/qwik": "^1.19.2",
     "@qwik.dev/astro": "^1.0.1",
+    "@qwik.dev/core": "2.0.0-beta.30",
     "@swup/astro": "^1.8.0",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.3",
