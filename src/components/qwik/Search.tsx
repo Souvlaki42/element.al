@@ -25,7 +25,7 @@ export const Search = component$<SearchProps>(({ elements }) => {
           stroke="currentColor"
           aria-hidden="true"
           data-slot="icon"
-          class="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 transform text-gray-400"
+          class="absolute top-1/2 left-3 h-5 w-5 -translate-y-1/2 transform text-gray-400"
         >
           <path
             stroke-linecap="round"
@@ -37,7 +37,7 @@ export const Search = component$<SearchProps>(({ elements }) => {
           type="text"
           value={query.value}
           onInput$={(_, target) => (query.value = target.value)}
-          class="w-full rounded-lg border border-gray-300 bg-white py-2 pl-10 pr-4 text-gray-900 placeholder-gray-500 focus:outline-hidden focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+          class="w-full rounded-lg border border-gray-300 bg-white py-2 pr-4 pl-10 text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:outline-hidden dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           placeholder="Search elements..."
           aria-label="Search elements"
         />
