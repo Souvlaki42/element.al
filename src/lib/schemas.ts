@@ -1,4 +1,4 @@
-import { z } from "astro:schema";
+import { z } from "astro/zod";
 
 export const elementSchema = z.object({
   id: z.string(),

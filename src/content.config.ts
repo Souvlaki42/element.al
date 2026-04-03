@@ -1,5 +1,6 @@
 import { file } from "astro/loaders";
-import { defineCollection, z } from "astro:content";
+import type { z } from "astro/zod";
+import { defineCollection } from "astro:content";
 import { elementSchema } from "~/lib/schemas";
 
 type Element = z.infer<typeof elementSchema>;
