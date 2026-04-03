@@ -7,6 +7,6 @@ import swup from "@swup/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://elemental.souviki.me",
+  site: "https://elemental.moulas.dev",
   integrations: [tailwind(), qwikdev({ include: "**/qwik/*.tsx" }), swup()]
 });
