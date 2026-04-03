@@ -6,7 +6,7 @@ export async function getStaticPaths() {
   const elements = await getCollection("elements");
 
   return elements.map((element) => ({
-    params: { atomic: element.data.atomicNumber },
+    params: { atomic: element.data.atomicNumber.toString() },
     props: { rawElement: element }
   }));
 }
