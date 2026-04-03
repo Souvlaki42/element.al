@@ -17,4 +17,4 @@ Based on [delta6626's repository](https://github.com/delta6626/elemental)
 
 ## License
 
-[MIT](LICENSE)
+This project is released under [The Unlicense](./LICENSE). Learn more by visiting [their website](https://unlicense.org).
