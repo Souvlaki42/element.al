@@ -1,12 +1,14 @@
 // @ts-check
-import tailwind from "@astrojs/tailwind";
-import qwikdev from "@qwikdev/astro";
+import qwik from "@qwik.dev/astro";
 import { defineConfig } from "astro/config";
 
-import swup from "@swup/astro";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://elemental.souviki.me",
-  integrations: [tailwind(), qwikdev({ include: "**/qwik/*.tsx" }), swup()]
+  site: "https://elemental.moulas.dev",
+  integrations: [qwik({ include: "**/qwik/*.tsx", clientRouter: true })],
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });

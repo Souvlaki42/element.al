@@ -1,19 +1,20 @@
 # Element.al
 
 A simple interface for getting information about elements.
-Based on [delta6626's repository](https://github.com/delta6626/elemental)
+Based on [delta6626's repository](https://github.com/delta6626/elemental).
 
 ## Features
 
-- Search by name, atomic number or symbol
-- See the properties of an element
+- Search by name, atomic number or symbol.
+- See the properties of an element.
 
 ## Todo
 
-- [ ] Add a new favicon
-- [ ] Add a link to Dimitri Mendeleev's wikipedia page
-- [ ] Migrate to tailwind v4
+- [x] Add a new favicon.
+- [x] Add a link to Dmitri Mendeleev's Wikipedia page.
+- [x] Migrate to tailwind v4.
+- [ ] Maybe add fuzzy searching.
 
 ## License
 
-[MIT](LICENSE)
+This project is released under [The Unlicense](./LICENSE). Learn more by visiting [their website](https://unlicense.org).

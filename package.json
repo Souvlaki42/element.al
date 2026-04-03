@@ -2,7 +2,7 @@
   "name": "element.al",
   "description": "A simple interface for getting information about elements.",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -11,24 +11,23 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
-    "@builder.io/qwik": "^1.17.2",
-    "@qwikdev/astro": "^0.7.12",
-    "@swup/astro": "^1.7.0",
-    "astro": "^5.16.4",
-    "tailwindcss": "^3.4.18",
-    "typescript": "^5.9.3"
+    "@qwik.dev/astro": "^1.0.1",
+    "@qwik.dev/core": "2.0.0-beta.30",
+    "@tailwindcss/vite": "^4.2.2",
+    "astro": "^6.1.3",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "prettier": "^3.7.4",
+    "typescript": "^6.0.2",
+    "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.6.14"
+    "prettier-plugin-tailwindcss": "^0.7.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
       "sharp",
-      "swup"
+      "@tailwindcss/oxide"
     ]
   }
 }
